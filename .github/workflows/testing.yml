@@ -19,13 +19,6 @@ jobs:
         with:
           version: v1.30
 
-      - name: Lint GoReleaser
-        uses: goreleaser/goreleaser-action@v2
-        with:
-          args: --skip-publish --snapshot
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     
-
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
   test:
@@ -46,7 +39,6 @@ jobs:
 
       - name: Build Recipe Counter
         run: |
-          go mod download
           make build
 
       - name: Run Integration Tests     
