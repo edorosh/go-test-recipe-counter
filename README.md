@@ -240,10 +240,6 @@ required there.
 
 TODO:
 -----
-
-* add travic-ci / github workflows
-* add conv report
-* add go quality report
-* Make RecipeHandlers injectable into the Command and cover main.go by Unit Test
+* Make `app.Resulter` injectable into the Command and cover main.go by Unit Test
 * analyze memory profile
 
