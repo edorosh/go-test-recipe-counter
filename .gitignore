@@ -1,0 +1,8 @@
+/dist
+.idea
+coverage.txt
+err.txt
+cpuprofile
+out.txt
+hf_test_calculation_fixtures.json
+.DS_Store
